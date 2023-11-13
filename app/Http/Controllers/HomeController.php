@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('inicio');
+    }
+    
+    public function missingMethod($parameters = array()){
+        abort(404);
     }
 }
